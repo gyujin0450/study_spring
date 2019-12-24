@@ -40,7 +40,8 @@
 	</bean> 
 	--> 
 	
-	<!-- 변경된 datasouce [2] -->
+	<!-- 변경된 datasouce [2] : hikariConfig 를 이용한 접속(p84) -->
+	<!-- https://github.com/brettwooldridge/HikariCP#configuration-knobs-baby -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
 		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/pmsadmin00?serverTimezone=Asia/Seoul"></property>

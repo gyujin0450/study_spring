@@ -7,12 +7,18 @@ public class SampleHotel {
 	
 	private Chef chef;
 
-	// 아래 생성자를 주입을  @RequiredArgsConstructor 임(p61) 
+	// 생성자를 선언하고 Chef를 주입함(p68)
 	public SampleHotel(Chef chef) {
 		this.setChef(chef);
 	}
 
-	// chef의 getter/settor 생성이 필요한가?
+	// toString() 생성
+	@Override
+	public String toString() {
+		return "SampleHotel [chef=" + chef + "]";
+	}
+
+	// setter/getter 생성
 	public Chef getChef() {
 		return chef;
 	}
@@ -20,8 +26,5 @@ public class SampleHotel {
 	public void setChef(Chef chef) {
 		this.chef = chef;
 	}
-
-
-	
 	
 }
