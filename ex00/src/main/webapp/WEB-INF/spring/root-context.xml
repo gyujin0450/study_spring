@@ -49,7 +49,7 @@
 		<property name="password" value="qwer@asdF1"></property>
 	</bean>
 
-	<!-- https://github.com/zeroKang/ex03/blob/master/ex02/src/main/webapp/WEB-INF/spring/root-context.xml -->
+	<!-- SQLsessionFactory 설정(p91)-->
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
 		<constructor-arg ref="hikariConfig" />
 	</bean>
