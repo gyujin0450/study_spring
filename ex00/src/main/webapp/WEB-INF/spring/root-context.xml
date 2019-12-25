@@ -59,9 +59,11 @@
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
 
-	<!-- mybatis SqlSessionFactoryBean -->
+	<!-- mybatis SqlSessionFactoryBean (p95)-->
+	<!-- 네임스페이스에서 mybatis-spring 선택해야 함 -->
 	<mybatis-spring:scan base-package="kr.pmadvisor.pms.mapper" />
 
+	<!-- XML를 통한 의존성 주입 설정(p58) ==> servlet-context.xml 에서 처리 
 	<context:component-scan base-package="kr.pmadvisor.pms.sample"/>
-
+    -->
 </beans>

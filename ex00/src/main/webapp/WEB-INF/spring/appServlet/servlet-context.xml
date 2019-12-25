@@ -20,9 +20,8 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-	
+     
+    <!-- pms 하위의 모든 component scan --> 	
 	<context:component-scan base-package="kr.pmadvisor.pms" />
-	
-	
 	
 </beans:beans>

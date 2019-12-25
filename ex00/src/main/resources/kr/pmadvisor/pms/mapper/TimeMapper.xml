@@ -4,7 +4,7 @@
 <mapper namespace="kr.pmadvisor.pms.mapper.TimeMapper">
 
 	<select id="getTime2" resultType="String">
-		SELECT sysdate() FROM dual
+		SELECT now()
 	</select>
 	
 </mapper>
