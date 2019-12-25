@@ -1,3 +1,19 @@
-# 코드로 배우는 스프링(개정판) - ex00
+# 코드로 배우는 스프링(개정판) - ex00 개선 이력
 
-# 
+(p30)기존 프로젝트 베이스라인
+
+(p54~61)lombok 제거 버전
+
+(p61)logback 적용
+
+(p61) test 폴더 .gitignore 제외
+
+(p71)Oracle 설정을 MySQL로 변경
+
+(p89~92)MyBatis 설정-라이브러리,환경설정
+
+(p93~)MyBatis-Spring 연동 처리
+
+(p101)log4jdbc-log4j2 설정
+- Preparestatement에서 사용한 ? 가 SQL로 어떻게 변환 되었는지 확인 가능
+
