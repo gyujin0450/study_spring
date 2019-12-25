@@ -17,3 +17,4 @@
 (p101)log4jdbc-log4j2 설정
 - Preparestatement에서 사용한 ? 가 SQL로 어떻게 변환 되었는지 확인 가능
 
+(p104)로그레벨 조정(log4jdbc)

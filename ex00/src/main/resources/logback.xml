@@ -26,5 +26,19 @@
         <appender-ref ref="CONSOLE"/> <!-- Console에 로그를 출력하고자 할 때 사용 -->
         <appender-ref ref="FILE"/> <!-- File로 로그를 남기고자 할 때 사용 -->
     </root>
+    
+    <!-- log4jbbc 출력 로그 조절(p104) -->
+	<logger name="jdbc.audit">
+		<level value="warn" />
+	</logger>
+
+	<logger name="jdbc.resultset">
+		<level value="warn" />
+	</logger>
+	
+	<logger name="jdbc.connection">
+		<level value="warn" />
+	</logger>
+    
 
 </configuration>
